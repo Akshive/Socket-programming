@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     // Create a socket
-    int listening = socket(AF_INET, SOCK_STREAM, 0);
+    int listening = socket(AF_INET /* IPV4 */, SOCK_STREAM /* TCP */, 0);
     if (listening < 0)
     {
         cerr << "can't craete a socket!" << endl;
